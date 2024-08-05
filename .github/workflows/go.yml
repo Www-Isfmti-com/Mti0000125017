@@ -20,10 +20,10 @@ jobs:
         env:
           OUTPUT_DIR: /tmp/mpjpeg
         run: go test ./...
-
       - name: Upload unexpected output files
         if: failure()
         uses: actions/upload-artifact@master
         with:
           name: mpjpeg
           path: /tmp/mpjpeg
+Mti
